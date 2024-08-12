@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../ios/">
+        <link rel="prev" href="../android/">
       
       
-        <link rel="next" href="../android_changelog/">
+        <link rel="next" href="../manifest/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Android manifest permissions and usage - Collector Docs</title>
+        <title>iOS - Collector Docs</title>
       
     
     
@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#adding-dependencies-using-swift-package-manager" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -93,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Android manifest permissions and usage
+              iOS
             
           </span>
         </div>
@@ -183,17 +188,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
           <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
@@ -207,7 +214,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Getting Started
@@ -260,10 +267,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../ios/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    iOS
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -272,6 +297,60 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#adding-dependencies-using-swift-package-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding dependencies using swift package manager
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linking-and-embedding-the-sdk-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linking and Embedding the SDK Framework
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Application code
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -288,17 +367,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../manifest/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -307,7 +379,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -414,6 +485,50 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#adding-dependencies-using-swift-package-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding dependencies using swift package manager
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linking-and-embedding-the-sdk-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linking and Embedding the SDK Framework
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Application code
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -427,57 +542,48 @@
                   
 
 
-  <h1>Android manifest permissions and usage</h1>
+  <h1>iOS</h1>
 
-<pre><code>&lt;uses-permission android:name=&quot;android.permission.INTERNET&quot; /&gt;
+<h2 id="adding-dependencies-using-swift-package-manager">Adding dependencies using swift package manager</h2>
+<p>You'll recieve zip file containing the Swift Package. Complete the following steps to import the framework into your Xcode project:</p>
+<ul>
+<li>Download the .zip which contains Collector Framework</li>
+<li>Unzip the contents of the zip file</li>
+<li>Move "Collector" folder inside your project. </li>
+</ul>
+<p><img alt="Place collector dependency into project" src="../images/ios/place_collector_into_project.png" /></p>
+<p>Next steps:
+- Open your project in XCode
+- Select Project, Open Project Settings, Switch to Package Dependencies &amp; Click add (+) </p>
+<p><img alt="Add collector dependency" src="../images/ios/add_swift_package_dependency.png" /></p>
+<ul>
+<li>Click "Add Local" (Image below).</li>
+<li>Select the package that you just moved to your project (Image below).</li>
+<li>Now, Select all packages &amp; select Target in which you wish to add those packages</li>
+<li>After import you should see the "collector" in the project structure. </li>
+</ul>
+<p><img alt="Project structure" src="../images/ios/project_structure.png" /></p>
+<h2 id="linking-and-embedding-the-sdk-framework">Linking and Embedding the SDK Framework</h2>
+<p>Ensure that the dependency is available to your application, Open Project settings, select target, switch to General Tab &amp; make sure that dependency is added.</p>
+<h2 id="application-code">Application code</h2>
+<p>The general collector allows for using the camera along with some sensor collecting.</p>
+<p>You can start listening and collecting sensor events like this:</p>
+<pre><code class="language-swift">Collector.shared.initialize(cid: cid, baseUrl: baseUrl, csid: csid, userID: username)
+Collector.shared.startListeningToEvents()
+Collector.shared.collect()
 </code></pre>
-<p>The SDK is making network requests</p>
-<pre><code>&lt;uses-permission android:name=&quot;android.permission.ACCESS_NETWORK_STATE&quot; /&gt;
+<p><code>cid</code> = Customer Specific Identifier. This identifier will be provided by IronVest
+baseUrl = This baseUrl will be provided by IronVest</p>
+<p><code>csid</code> = Customer Session Identifier. Usually it's a unique session identifier for each user session. This is the identifier by which the session can be queried during validation or looked for in the dashboard</p>
+<p><code>userID</code> = Unique User Identifier.</p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p>The SDK generates logs throughout its execution. The most recent logs are stored in memory and can be retrieved for problems troubleshooting. Below is an example of how these logs can be put in a variable or in the Pasteboard to be shared with someone else.</p>
+<pre><code>// Example 1: Collecting Logs in a variable
+var sdkLogs = Collector.shared.getLogs()
 </code></pre>
-<p>The SDK is collecting information about currently connected networks</p>
-<pre><code>&lt;uses-permission android:name=&quot;android.permission.ACCESS_WIFI_STATE&quot; /&gt;
+<pre><code>// Example 2: Collecting logs into Pasteboard &amp; App-User can paste it anywhere (whatsapp, mail, telegram etc)
+UIPasteboard.general.string = Collector.shared.getLogs()
 </code></pre>
-<p>The SDK is collecting information about current connected networks including wifi information</p>
-<pre><code>&lt;uses-permission  
-    android:name=&quot;android.permission.ACCESS_COARSE_LOCATION&quot;  
-    tools:node=&quot;remove&quot; /&gt;  
-&lt;uses-permission  
-    android:name=&quot;android.permission.ACCESS_FINE_LOCATION&quot;  
-    tools:node=&quot;remove&quot; /&gt;
-</code></pre>
-<p>The SDK is collecting device location information. It is not forced on the client and will not be merged into the consumer <code>AndroidManifest.xml</code> </p>
-<pre><code>&lt;uses-permission  
-    android:name=&quot;android.permission.BLUETOOTH_CONNECT&quot;  
-    tools:node=&quot;remove&quot; /&gt;  
-&lt;uses-permission  
-    android:name=&quot;android.permission.BLUETOOTH&quot;  
-    android:maxSdkVersion=&quot;30&quot;  
-    tools:node=&quot;remove&quot; /&gt;  
-&lt;uses-permission  
-    android:name=&quot;android.permission.BLUETOOTH_ADMIN&quot;  
-    android:maxSdkVersion=&quot;30&quot;  
-    tools:node=&quot;remove&quot; /&gt;
-</code></pre>
-<p>The SDK collects bluetooth status and devices information. It is not forced on the client and will not be merged into the consumer <code>AndroidManifest.xml</code></p>
-<pre><code>&lt;uses-permission  
-    android:name=&quot;android.permission.QUERY_ALL_PACKAGES&quot;  
-    tools:ignore=&quot;QueryAllPackagesPermission&quot;  
-    tools:node=&quot;remove&quot; /&gt;
-</code></pre>
-<p>The SDK collects installed applications looking for malware or anything suspicious that can be used to trick the bank customer to share sensitive information. It is not forced on the client and will not be merged into the consumer <code>AndroidManifest.xml</code></p>
-<pre><code>&lt;uses-permission android:name=&quot;android.permission.READ_PHONE_NUMBERS&quot;  
-    tools:node=&quot;remove&quot;/&gt;  
-&lt;uses-permission android:name=&quot;android.permission.READ_SMS&quot;  
-    tools:node=&quot;remove&quot;/&gt;  
-&lt;uses-permission android:name=&quot;android.permission.READ_PRIVILEGED_PHONE_STATE&quot;  
-    tools:ignore=&quot;ProtectedPermissions&quot;  
-    tools:node=&quot;remove&quot;/&gt;
-</code></pre>
-<p>The SDK tries to read carrier and phone information, including signal levels, battery levels, amount of sim cards etc. It is not forced on the client and will not be merged into the consumer <code>AndroidManifest.xml</code></p>
-<pre><code>&lt;uses-permission android:name=&quot;android.permission.HIDE_OVERLAY_WINDOWS&quot;  
-    tools:node=&quot;remove&quot;/&gt;
-</code></pre>
-<p>The SDK allows to control when overlays are allowed to be displayed over the application. This permission is required to be able to control that. It is not forced on the client and will not be merged into consumer <code>AndroidManifest.xml</code></p>
 
 
 
