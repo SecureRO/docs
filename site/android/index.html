@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../ios/">
+        <link rel="prev" href="..">
       
       
-        <link rel="next" href="../android_changelog/">
+        <link rel="next" href="../ios/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Android manifest permissions and usage - Collector Docs</title>
+        <title>Android - Collector Docs</title>
       
     
     
@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#general-usage-as-aar-file" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -93,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Android manifest permissions and usage
+              Android
             
           </span>
         </div>
@@ -183,17 +188,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
           <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
@@ -207,7 +214,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Getting Started
@@ -239,10 +246,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../android/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Android
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -251,6 +276,66 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-usage-as-aar-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      General usage as .aar file
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="General usage as .aar file">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#including-the-dependency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Including the dependency
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage-in-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage in code
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#play-integrity-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Play Integrity Integration
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -288,17 +373,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../manifest/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -307,7 +385,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -414,6 +491,56 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-usage-as-aar-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      General usage as .aar file
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="General usage as .aar file">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#including-the-dependency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Including the dependency
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage-in-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage in code
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#play-integrity-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Play Integrity Integration
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -427,57 +554,68 @@
                   
 
 
-  <h1>Android manifest permissions and usage</h1>
+  <h1>Android</h1>
 
-<pre><code>&lt;uses-permission android:name=&quot;android.permission.INTERNET&quot; /&gt;
+<h3 id="general-usage-as-aar-file">General usage as <code>.aar</code> file</h3>
+<h4 id="including-the-dependency">Including the dependency</h4>
+<p>Include the following dependencies in your application <code>build.gradle</code> file</p>
+<pre><code class="language-groovy">dependencies {
+// ... your dependencies
+
+// Collector dependencies
+implementation 'com.google.code.gson:gson:2.10.1'  
+implementation 'com.google.android.gms:play-services-location:21.0.1'  
+implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'  
+implementation 'com.squareup.okhttp3:okhttp:4.11.0'  
+implementation 'com.squareup.moshi:moshi-kotlin:1.14.0'  
+implementation 'com.google.android.gms:play-services-safetynet:18.0.1'  
+implementation 'com.google.guava:guava:31.0.1-jre'  
+
+// Optional Huawei location dependency
+implementation 'com.huawei.hms:location:6.12.0.300'  
+
+// Optional Play Integrity dependency
+implementation 'com.google.android.play:integrity:1.4.0'
+
+// Collector dependency
+implementation files('libs/collector-release.aar')
+}
 </code></pre>
-<p>The SDK is making network requests</p>
-<pre><code>&lt;uses-permission android:name=&quot;android.permission.ACCESS_NETWORK_STATE&quot; /&gt;
+<p>The collector uses, but doesn't require the following permissions in the <code>AndroidManifest.xml</code>. Please make sure to include the ones you think are appropriate for your application <a href="/manifest">Collector manifest permissions and usage</a></p>
+<h4 id="usage-in-code">Usage in code</h4>
+<pre><code class="language-kotlin">class MyApp: Application() {
+    private val BASE_URL = &quot;base url provided by us&quot;
+    private val CID = &quot;customer id provided by us&quot;
+
+    fun onCreate() {
+        // It is preferred that the collector SDK is initialized from the Application class, but it can be initialized from any place before the SDK is used
+        val collector = CollectorAgent.initialize(this, BASE_URL, CID)
+
+        // mainly used to print the logs into logcat for debugging
+        collector.isDebug = false
+    }
+}
 </code></pre>
-<p>The SDK is collecting information about currently connected networks</p>
-<pre><code>&lt;uses-permission android:name=&quot;android.permission.ACCESS_WIFI_STATE&quot; /&gt;
+<pre><code class="language-kotlin">val collector = CollectorAgent.get()
+
+// call when the user session id is updated or available
+collector.setCSID(CSID)
+
+// call when the user id is updated or available
+collector.setUserID(UserID)
+
+// call when the state of the application is changed. Different contexts can trigger different state updates inside the SDK
+collector.sendContext(&quot;CONTEXT&quot;)
 </code></pre>
-<p>The SDK is collecting information about current connected networks including wifi information</p>
-<pre><code>&lt;uses-permission  
-    android:name=&quot;android.permission.ACCESS_COARSE_LOCATION&quot;  
-    tools:node=&quot;remove&quot; /&gt;  
-&lt;uses-permission  
-    android:name=&quot;android.permission.ACCESS_FINE_LOCATION&quot;  
-    tools:node=&quot;remove&quot; /&gt;
-</code></pre>
-<p>The SDK is collecting device location information. It is not forced on the client and will not be merged into the consumer <code>AndroidManifest.xml</code> </p>
-<pre><code>&lt;uses-permission  
-    android:name=&quot;android.permission.BLUETOOTH_CONNECT&quot;  
-    tools:node=&quot;remove&quot; /&gt;  
-&lt;uses-permission  
-    android:name=&quot;android.permission.BLUETOOTH&quot;  
-    android:maxSdkVersion=&quot;30&quot;  
-    tools:node=&quot;remove&quot; /&gt;  
-&lt;uses-permission  
-    android:name=&quot;android.permission.BLUETOOTH_ADMIN&quot;  
-    android:maxSdkVersion=&quot;30&quot;  
-    tools:node=&quot;remove&quot; /&gt;
-</code></pre>
-<p>The SDK collects bluetooth status and devices information. It is not forced on the client and will not be merged into the consumer <code>AndroidManifest.xml</code></p>
-<pre><code>&lt;uses-permission  
-    android:name=&quot;android.permission.QUERY_ALL_PACKAGES&quot;  
-    tools:ignore=&quot;QueryAllPackagesPermission&quot;  
-    tools:node=&quot;remove&quot; /&gt;
-</code></pre>
-<p>The SDK collects installed applications looking for malware or anything suspicious that can be used to trick the bank customer to share sensitive information. It is not forced on the client and will not be merged into the consumer <code>AndroidManifest.xml</code></p>
-<pre><code>&lt;uses-permission android:name=&quot;android.permission.READ_PHONE_NUMBERS&quot;  
-    tools:node=&quot;remove&quot;/&gt;  
-&lt;uses-permission android:name=&quot;android.permission.READ_SMS&quot;  
-    tools:node=&quot;remove&quot;/&gt;  
-&lt;uses-permission android:name=&quot;android.permission.READ_PRIVILEGED_PHONE_STATE&quot;  
-    tools:ignore=&quot;ProtectedPermissions&quot;  
-    tools:node=&quot;remove&quot;/&gt;
-</code></pre>
-<p>The SDK tries to read carrier and phone information, including signal levels, battery levels, amount of sim cards etc. It is not forced on the client and will not be merged into the consumer <code>AndroidManifest.xml</code></p>
-<pre><code>&lt;uses-permission android:name=&quot;android.permission.HIDE_OVERLAY_WINDOWS&quot;  
-    tools:node=&quot;remove&quot;/&gt;
-</code></pre>
-<p>The SDK allows to control when overlays are allowed to be displayed over the application. This permission is required to be able to control that. It is not forced on the client and will not be merged into consumer <code>AndroidManifest.xml</code></p>
+<h3 id="play-integrity-integration">Play Integrity Integration</h3>
+<p>The SDK is using the play integrity to utilize built in android security features. To use those features you have to configure the Play Integrity on the platform, which would include sharing the cloud project number and creating.</p>
+<p>To retrieve that info you have to go to your firebase console and open the project settings. <a href="https://console.firebase.google.com/">https://console.firebase.google.com/</a>
+The project number will be under the <code>General</code> tab
+<img alt="Firebase project settings" src="../images/android/firebase_project_settings.png" /></p>
+<p>We also need a service account private key to make requests to google on your behalf for retrieving additional information regarding suspicious activity on the device. You can generate the private key from firebase.</p>
+<p><img alt="Generage Private Key in Firebase" src="../images/android/firebase_generate_private_key.png" /></p>
+<p>Then you'll have to enable Play Integrity from the google console
+<a href="https://console.cloud.google.com/marketplace/product/google/playintegrity.googleapis.com">https://console.cloud.google.com/marketplace/product/google/playintegrity.googleapis.com</a> for your selected project.</p>
 
 
 
