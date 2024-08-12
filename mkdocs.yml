@@ -1,0 +1,8 @@
+site_name: Collector Docs
+
+theme:
+    name: material
+
+nav:
+    - Getting Started: index.md
+    - Manifest permissions and usage: manifest.md
