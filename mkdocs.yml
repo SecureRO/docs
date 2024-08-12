@@ -4,5 +4,11 @@ theme:
     name: material
 
 nav:
-    - Getting Started: index.md
-    - Manifest permissions and usage: manifest.md
+    - Getting Started:
+      - Getting started: index.md
+      - Android: android.md
+      - iOS: ios.md
+    - Android manifest permissions and usage: manifest.md
+    - Changelog:
+      - Android Changelog: android_changelog.md
+      - iOS Changelog: ios_changelog.md
