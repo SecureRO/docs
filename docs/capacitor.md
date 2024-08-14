@@ -4,10 +4,41 @@ This is a mobile sdk for fraud detection that is compatible with the Capacitor c
 
 First you should copy the plugin directory into a place inside your project where it always accessible.
 
+Then you should be installing all the plugin dependencies inside the plugin and building it:
+
+```shell
+cd capacitor-collector-plugin
+npm install  
+npm run build
+```
+
 Then, the installation of the plugin is as simple as just running.
 ```shell
 npm install ../capacitor-collector-plugin
 npx cap sync
+```
+
+### Example
+
+There is an example application inside the plugin directory called `example`. After installing the dependencies of the plugin and buildilng it, I recommend playing around with the example by doing so:
+
+```shell
+cd capacitor-collector-plugin
+npm install
+npx cap sync
+npm run build
+```
+
+After that you can open the example app and run on different mobile platforms.
+
+```shell
+# Android
+npx cap open android # Will open the example project in Android Studio where you can build and run it
+```
+
+```shell
+# iOS
+npx cap open ios # Will open the example project in XCode where you can build and run it
 ```
 
 ### Usage
