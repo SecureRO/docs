@@ -367,6 +367,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
       Usage
@@ -501,6 +510,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
       Usage
@@ -529,9 +547,28 @@
 <p>This is a mobile sdk for fraud detection that is compatible with the Capacitor cross-platform mobile framework.</p>
 <h3 id="installation">Installation</h3>
 <p>First you should copy the plugin directory into a place inside your project where it always accessible.</p>
+<p>Then you should be installing all the plugin dependencies inside the plugin and building it:</p>
+<pre><code class="language-shell">cd capacitor-collector-plugin
+npm install  
+npm run build
+</code></pre>
 <p>Then, the installation of the plugin is as simple as just running.</p>
 <pre><code class="language-shell">npm install ../capacitor-collector-plugin
 npx cap sync
+</code></pre>
+<h3 id="example">Example</h3>
+<p>There is an example application inside the plugin directory called <code>example</code>. After installing the dependencies of the plugin and buildilng it, I recommend playing around with the example by doing so:</p>
+<pre><code class="language-shell">cd capacitor-collector-plugin
+npm install
+npx cap sync
+npm run build
+</code></pre>
+<p>After that you can open the example app and run on different mobile platforms.</p>
+<pre><code class="language-shell"># Android
+npx cap open android # Will open the example project in Android Studio where you can build and run it
+</code></pre>
+<pre><code class="language-shell"># iOS
+npx cap open ios # Will open the example project in XCode where you can build and run it
 </code></pre>
 <h3 id="usage">Usage</h3>
 <p>You can use the SDK comfortably from your JavaScript code.</p>
