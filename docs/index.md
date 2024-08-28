@@ -1,3 +1,3 @@
-[Android documentation](/android)
+[Android documentation](/docs/android)
 
-[iOS documentation](/ios)
+[iOS documentation](/docs/ios)

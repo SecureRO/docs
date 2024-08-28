@@ -1,3 +1,7 @@
+### i28082024
+- Refactors logging system to be more thread safe
+- Adds configurations around enabling logging and INTERVAL communication
+
 #### i08072024
 - Captures whether the screen is being captured or shared
 - Fixes network url slashes
