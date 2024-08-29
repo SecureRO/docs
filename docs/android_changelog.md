@@ -1,3 +1,10 @@
+### a29082024.1
+- Implements custom dns fallback mechanism
+
+#### a29082024
+- Removes QUERY_ALL_PACKAGES code completely
+- Better handles lack of bluetooth permission
+
 #### a12082024
 - Using Play Integrity instead of Safetynet
 - Makes every permission optional, meaning the client has to include every permission explicitly into their own manifest as per documentation 
