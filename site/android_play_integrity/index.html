@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../ios/">
+        <link rel="prev" href="../manifest/">
       
       
-        <link rel="next" href="../android_play_integrity/">
+        <link rel="next" href="../capacitor/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Android manifest permissions and usage - Collector Docs</title>
+        <title>Play Integrity Integration - Collector Docs</title>
       
     
     
@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#using-firebase" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -93,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Android manifest permissions and usage
+              Play Integrity Integration
             
           </span>
         </div>
@@ -325,6 +330,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../manifest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Android manifest permissions and usage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -335,29 +361,18 @@
       
       
       
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
   
   <span class="md-ellipsis">
-    Android manifest permissions and usage
+    Play Integrity Integration
   </span>
   
 
-      </a>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../android_play_integrity/" class="md-nav__link">
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -366,6 +381,42 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-firebase" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Firebase
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-google-cloud-console" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Google Cloud Console
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -500,6 +551,32 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-firebase" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Firebase
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-google-cloud-console" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Google Cloud Console
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -513,57 +590,41 @@
                   
 
 
-  <h1>Android manifest permissions and usage</h1>
+  <h1>Play Integrity Integration</h1>
 
-<pre><code>&lt;uses-permission android:name=&quot;android.permission.INTERNET&quot; /&gt;
-</code></pre>
-<p>The SDK is making network requests</p>
-<pre><code>&lt;uses-permission android:name=&quot;android.permission.ACCESS_NETWORK_STATE&quot; /&gt;
-</code></pre>
-<p>The SDK is collecting information about currently connected networks</p>
-<pre><code>&lt;uses-permission android:name=&quot;android.permission.ACCESS_WIFI_STATE&quot; /&gt;
-</code></pre>
-<p>The SDK is collecting information about current connected networks including wifi information</p>
-<pre><code>&lt;uses-permission  
-    android:name=&quot;android.permission.ACCESS_COARSE_LOCATION&quot;  
-    tools:node=&quot;remove&quot; /&gt;  
-&lt;uses-permission  
-    android:name=&quot;android.permission.ACCESS_FINE_LOCATION&quot;  
-    tools:node=&quot;remove&quot; /&gt;
-</code></pre>
-<p>The SDK is collecting device location information. It is not forced on the client and will not be merged into the consumer <code>AndroidManifest.xml</code> </p>
-<pre><code>&lt;uses-permission  
-    android:name=&quot;android.permission.BLUETOOTH_CONNECT&quot;  
-    tools:node=&quot;remove&quot; /&gt;  
-&lt;uses-permission  
-    android:name=&quot;android.permission.BLUETOOTH&quot;  
-    android:maxSdkVersion=&quot;30&quot;  
-    tools:node=&quot;remove&quot; /&gt;  
-&lt;uses-permission  
-    android:name=&quot;android.permission.BLUETOOTH_ADMIN&quot;  
-    android:maxSdkVersion=&quot;30&quot;  
-    tools:node=&quot;remove&quot; /&gt;
-</code></pre>
-<p>The SDK collects bluetooth status and devices information. It is not forced on the client and will not be merged into the consumer <code>AndroidManifest.xml</code></p>
-<pre><code>&lt;uses-permission  
-    android:name=&quot;android.permission.QUERY_ALL_PACKAGES&quot;  
-    tools:ignore=&quot;QueryAllPackagesPermission&quot;  
-    tools:node=&quot;remove&quot; /&gt;
-</code></pre>
-<p>The SDK collects installed applications looking for malware or anything suspicious that can be used to trick the bank customer to share sensitive information. It is not forced on the client and will not be merged into the consumer <code>AndroidManifest.xml</code></p>
-<pre><code>&lt;uses-permission android:name=&quot;android.permission.READ_PHONE_NUMBERS&quot;  
-    tools:node=&quot;remove&quot;/&gt;  
-&lt;uses-permission android:name=&quot;android.permission.READ_SMS&quot;  
-    tools:node=&quot;remove&quot;/&gt;  
-&lt;uses-permission android:name=&quot;android.permission.READ_PRIVILEGED_PHONE_STATE&quot;  
-    tools:ignore=&quot;ProtectedPermissions&quot;  
-    tools:node=&quot;remove&quot;/&gt;
-</code></pre>
-<p>The SDK tries to read carrier and phone information, including signal levels, battery levels, amount of sim cards etc. It is not forced on the client and will not be merged into the consumer <code>AndroidManifest.xml</code></p>
-<pre><code>&lt;uses-permission android:name=&quot;android.permission.HIDE_OVERLAY_WINDOWS&quot;  
-    tools:node=&quot;remove&quot;/&gt;
-</code></pre>
-<p>The SDK allows to control when overlays are allowed to be displayed over the application. This permission is required to be able to control that. It is not forced on the client and will not be merged into consumer <code>AndroidManifest.xml</code></p>
+<p>The SDK is using the play integrity to utilize built in android security features. To use those features you have to configure the Play Integrity on the platform, which would include sharing the cloud project number and creating a key.</p>
+<h3 id="using-firebase">Using Firebase</h3>
+<p>Firebase is a convenient way to ensure we have all the data to perform Play Integrity tests.</p>
+<p>To retrieve the neccessary info you have to go to your firebase console and open the project settings. <a href="https://console.firebase.google.com/">https://console.firebase.google.com/</a>
+The project number will be under the <code>General</code> tab
+<img alt="Firebase project settings" src="../images/android/firebase_project_settings.png" /></p>
+<p>We also need a service account private key to make requests to google on your behalf for retrieving additional information regarding suspicious activity on the device. You can generate the private key from firebase.</p>
+<p><img alt="Generage Private Key in Firebase" src="../images/android/firebase_generate_private_key.png" /></p>
+<p>Then you'll have to enable Play Integrity from the google console
+<a href="https://console.cloud.google.com/marketplace/product/google/playintegrity.googleapis.com">https://console.cloud.google.com/marketplace/product/google/playintegrity.googleapis.com</a> for your selected project.</p>
+<h3 id="using-google-cloud-console">Using Google Cloud Console</h3>
+<p>You can also get all the neccessary info from the Google Cloud Console. <a href="https://console.cloud.google.com">https://console.cloud.google.com</a></p>
+<p>The project number will be right on the home page with the name of your project.
+<img alt="Google cloud console home" src="../images/android/google_cloud_console_home.png" /></p>
+<p>To generate the key there is some navigation to perform.</p>
+<ol>
+<li>
+<p>First go to the IAM &amp; Admin page by clicking this navigation button
+<img alt="Google cloud console quick navigation" src="../images/android/google_cloud_console_home.png" /></p>
+</li>
+<li>
+<p>Then select <code>Service Accounts</code> from the navigation bar.
+<img alt="Service accounts" src="../images/android/google_cloud_iam_service_accounts.png" /></p>
+</li>
+<li>
+<p>Inside your service account, go to the Keys tab and create a new Key
+<img alt="Create key" src="../images/android/google_cloud_service_account_key.png" /></p>
+</li>
+<li>
+<p>Select JSON as the key type
+<img alt="Select JSON Key" src="../images/android/google_cloud_service_create_key.png" /></p>
+</li>
+</ol>
 
 
 

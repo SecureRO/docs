@@ -64,18 +64,3 @@ collector.setUserID(UserID)
 collector.sendContext("CONTEXT")
 ```
 
-
-### Play Integrity Integration
-
-The SDK is using the play integrity to utilize built in android security features. To use those features you have to configure the Play Integrity on the platform, which would include sharing the cloud project number and creating.
-
-To retrieve that info you have to go to your firebase console and open the project settings. <https://console.firebase.google.com/>
-The project number will be under the `General` tab
-![Firebase project settings](images/android/firebase_project_settings.png)
-
-We also need a service account private key to make requests to google on your behalf for retrieving additional information regarding suspicious activity on the device. You can generate the private key from firebase.
-
-![Generage Private Key in Firebase](images/android/firebase_generate_private_key.png)
-
-Then you'll have to enable Play Integrity from the google console
-<https://console.cloud.google.com/marketplace/product/google/playintegrity.googleapis.com> for your selected project.

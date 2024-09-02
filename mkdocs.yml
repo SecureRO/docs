@@ -8,7 +8,9 @@ nav:
       - Getting started: index.md
       - Android: android.md
       - iOS: ios.md
-    - Android manifest permissions and usage: manifest.md
+    - Android:
+      - Android manifest permissions and usage: manifest.md
+      - Play Integrity Integration: android_play_integrity.md 
     - Capacitor plugin: capacitor.md
     - Changelog:
       - Android Changelog: android_changelog.md
