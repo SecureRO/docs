@@ -323,15 +323,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#play-integrity-integration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Play Integrity Integration
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -375,6 +366,41 @@
   
   
   
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Android
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Android
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="../manifest/" class="md-nav__link">
         
@@ -385,6 +411,35 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../android_play_integrity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Play Integrity Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -550,15 +605,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#play-integrity-integration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Play Integrity Integration
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -630,15 +676,6 @@ collector.setUserID(UserID)
 // call when the state of the application is changed. Different contexts can trigger different state updates inside the SDK
 collector.sendContext(&quot;CONTEXT&quot;)
 </code></pre>
-<h3 id="play-integrity-integration">Play Integrity Integration</h3>
-<p>The SDK is using the play integrity to utilize built in android security features. To use those features you have to configure the Play Integrity on the platform, which would include sharing the cloud project number and creating.</p>
-<p>To retrieve that info you have to go to your firebase console and open the project settings. <a href="https://console.firebase.google.com/">https://console.firebase.google.com/</a>
-The project number will be under the <code>General</code> tab
-<img alt="Firebase project settings" src="../images/android/firebase_project_settings.png" /></p>
-<p>We also need a service account private key to make requests to google on your behalf for retrieving additional information regarding suspicious activity on the device. You can generate the private key from firebase.</p>
-<p><img alt="Generage Private Key in Firebase" src="../images/android/firebase_generate_private_key.png" /></p>
-<p>Then you'll have to enable Play Integrity from the google console
-<a href="https://console.cloud.google.com/marketplace/product/google/playintegrity.googleapis.com">https://console.cloud.google.com/marketplace/product/google/playintegrity.googleapis.com</a> for your selected project.</p>
 
 
 
