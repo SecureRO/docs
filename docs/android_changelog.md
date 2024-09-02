@@ -1,3 +1,6 @@
+#### a020902024
+- Raises screen sharing flag for the session without resetting it
+
 #### a29082024.1
 - Implements custom dns fallback mechanism
 
