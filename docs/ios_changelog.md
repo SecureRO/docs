@@ -1,4 +1,7 @@
-### i28082024
+#### i09092024
+- Fixes a crash when collectors are being accessed from multiple threads
+
+#### i28082024
 - Refactors logging system to be more thread safe
 - Adds configurations around enabling logging and INTERVAL communication
 
