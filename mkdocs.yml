@@ -11,6 +11,8 @@ nav:
     - Android:
       - Android manifest permissions and usage: manifest.md
       - Play Integrity Integration: android_play_integrity.md 
+    - iOS:
+      - Advanced setup: ios_advanced.md
     - Capacitor plugin: capacitor.md
     - Changelog:
       - Android Changelog: android_changelog.md
