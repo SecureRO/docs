@@ -1,5 +1,14 @@
 The SDK is using the play integrity to utilize built in android security features. To use those features you have to configure the Play Integrity on the platform, which would include sharing the cloud project number and creating a key.
 
+To be able to use the feature, you need to add the following dependency to your `build.gradle` file:
+
+```
+dependencies {
+	// ...
+	implementation 'com.google.android.play:integrity:1.4.0'
+}
+```
+
 ### Using Firebase
 
 Firebase is a convenient way to ensure we have all the data to perform Play Integrity tests.
