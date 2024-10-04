@@ -9,6 +9,12 @@ dependencies {
 }
 ```
 
+### Enabling the feature in Google Play Console
+
+Also the feature has to be enabled in the Goole Play Console for your project.
+
+![Enable in Google Play Console](images/android/google_enable_play_integrity.png)
+
 ### Using Firebase
 
 Firebase is a convenient way to ensure we have all the data to perform Play Integrity tests.
