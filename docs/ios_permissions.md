@@ -36,3 +36,9 @@
 <key>NSLocationWhenInUseUsageDescription</key>
 <string>Deteting if the user is using the application from regular locations.</string>
 ```
+
+**You also need to add wifi the Access Wi-Fi infromation capability**
+
+![Add Capabilities to the target](images/ios/add_capabilities.png)
+
+![Add "Collect Wi-Fi Information" capability](images/ios/add_wifi_capability.png)
