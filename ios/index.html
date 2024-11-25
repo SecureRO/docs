@@ -336,6 +336,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Application code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logging-failed-user-logins" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logging failed user logins
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -684,6 +699,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Application code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logging-failed-user-logins" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logging failed user logins
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -744,6 +774,17 @@ Collector.shared.collect()
 baseUrl = This baseUrl will be provided by IronVest</p>
 <p><code>csid</code> = Customer Session Identifier. Usually it's a unique session identifier for each user session. This is the identifier by which the session can be queried during validation or looked for in the dashboard</p>
 <p><code>userID</code> = Unique User Identifier.</p>
+<h3 id="logging-failed-user-logins">Logging failed user logins</h3>
+<p>There is a way to report failed user logins, the backend could match the amount of failed login attempts with the userids that are being used to authenticate to correct the possibility of fraud happening from the specific device.</p>
+<pre><code class="language-swift">// failed login using password
+Collector.shared.sendFailedLogin(uid: userId, method: &quot;password&quot;)
+
+// failed login using otp
+Collector.shared.sendFailedLogin(uid: userId, method: &quot;otp&quot;)
+
+// failed login using biometric
+Collecrtor.shared.sendFailedLogin(uid: userId, method: &quot;biometric&quot;)
+</code></pre>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <p>The SDK generates logs throughout its execution. The most recent logs are stored in memory and can be retrieved for problems troubleshooting. Below is an example of how these logs can be put in a variable or in the Pasteboard to be shared with someone else.</p>
 <pre><code>// Example 1: Collecting Logs in a variable
