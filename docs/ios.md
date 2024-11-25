@@ -44,6 +44,21 @@ baseUrl = This baseUrl will be provided by IronVest
 
 `userID` = Unique User Identifier.
 
+### Logging failed user logins 
+
+There is a way to report failed user logins, the backend could match the amount of failed login attempts with the userids that are being used to authenticate to correct the possibility of fraud happening from the specific device.
+
+```swift
+// failed login using password
+Collector.shared.sendFailedLogin(uid: userId, method: "password")
+
+// failed login using otp
+Collector.shared.sendFailedLogin(uid: userId, method: "otp")
+
+// failed login using biometric
+Collecrtor.shared.sendFailedLogin(uid: userId, method: "biometric")
+```
+
 ## Troubleshooting
 The SDK generates logs throughout its execution. The most recent logs are stored in memory and can be retrieved for problems troubleshooting. Below is an example of how these logs can be put in a variable or in the Pasteboard to be shared with someone else.
 

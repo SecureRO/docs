@@ -1,6 +1,6 @@
-### General usage as `.aar` file
+## General usage as `.aar` file
 
-#### Including the dependency
+### Including the dependency
 
 Include the following dependencies in your application `build.gradle` file
 
@@ -33,7 +33,7 @@ implementation files('libs/collector-release.aar')
 
 The collector uses, but doesn't require the following permissions in the `AndroidManifest.xml`. Please make sure to include the ones you think are appropriate for your application [Collector manifest permissions and usage](/manifest)
 
-#### Usage in code
+### Usage in code
 
  
 ```kotlin
@@ -62,5 +62,22 @@ collector.setUserID(UserID)
 
 // call when the state of the application is changed. Different contexts can trigger different state updates inside the SDK
 collector.sendContext("CONTEXT")
+```
+
+#### Logging failed user logins 
+
+There is a way to report failed user logins, the backend could match the amount of failed login attempts with the userids that are being used to authenticate to correct the possibility of fraud happening from the specific device.
+
+```kotlin
+val collector = CollectorAgent.get()
+
+// failed login using password
+collector.sendFailedLogin(uid = userId, method = "password")
+
+// failed login using otp
+collector.sendFailedLogin(uid = userId, method = "otp")
+
+// failed login using biometric
+collector.sendFailedLogin(uid = userId, method = "biometric")
 ```
 
