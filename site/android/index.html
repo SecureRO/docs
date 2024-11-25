@@ -316,6 +316,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Usage in code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logging-failed-user-logins" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logging failed user logins
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -682,6 +697,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Usage in code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logging-failed-user-logins" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logging failed user logins
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -706,8 +736,8 @@
 
   <h1>Android</h1>
 
-<h3 id="general-usage-as-aar-file">General usage as <code>.aar</code> file</h3>
-<h4 id="including-the-dependency">Including the dependency</h4>
+<h2 id="general-usage-as-aar-file">General usage as <code>.aar</code> file</h2>
+<h3 id="including-the-dependency">Including the dependency</h3>
 <p>Include the following dependencies in your application <code>build.gradle</code> file</p>
 <pre><code class="language-groovy">dependencies {
 // ... your dependencies
@@ -735,7 +765,7 @@ implementation files('libs/collector-release.aar')
 }
 </code></pre>
 <p>The collector uses, but doesn't require the following permissions in the <code>AndroidManifest.xml</code>. Please make sure to include the ones you think are appropriate for your application <a href="/manifest">Collector manifest permissions and usage</a></p>
-<h4 id="usage-in-code">Usage in code</h4>
+<h3 id="usage-in-code">Usage in code</h3>
 <pre><code class="language-kotlin">class MyApp: Application() {
     private val BASE_URL = &quot;base url provided by us&quot;
     private val CID = &quot;customer id provided by us&quot;
@@ -759,6 +789,19 @@ collector.setUserID(UserID)
 
 // call when the state of the application is changed. Different contexts can trigger different state updates inside the SDK
 collector.sendContext(&quot;CONTEXT&quot;)
+</code></pre>
+<h4 id="logging-failed-user-logins">Logging failed user logins</h4>
+<p>There is a way to report failed user logins, the backend could match the amount of failed login attempts with the userids that are being used to authenticate to correct the possibility of fraud happening from the specific device.</p>
+<pre><code class="language-kotlin">val collector = CollectorAgent.get()
+
+// failed login using password
+collector.sendFailedLogin(uid = userId, method = &quot;password&quot;)
+
+// failed login using otp
+collector.sendFailedLogin(uid = userId, method = &quot;otp&quot;)
+
+// failed login using biometric
+collector.sendFailedLogin(uid = userId, method = &quot;biometric&quot;)
 </code></pre>
 
 
