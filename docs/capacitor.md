@@ -18,6 +18,11 @@ npm install ../capacitor-collector-plugin
 npx cap sync
 ```
 
+### Limitations
+
+Note that Capacitor has limitations regarding the minimum versions of browsers and webcomponents installed on the device. This can limit the ways to test the application on emulators. [Source](https://ionicframework.com/docs/reference/browser-support?_gl=1*1l8esh*_gcl_au*NTA5MzIwMjk3LjE3Mzk0NTUzOTY.*_ga*MTgzMTEwMTE1LjE3Mzk0NTUzOTY.*_ga_REH9TJF6KF*MTczOTUyMzE4NS4yLjEuMTczOTUyMzM3NS4wLjAuMA..#a-note-on-angular-13-support)
+
+
 ### Example
 
 There is an example application inside the plugin directory called `example`. After installing the dependencies of the plugin and buildilng it, I recommend playing around with the example by doing so:
