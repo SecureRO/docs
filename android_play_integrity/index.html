@@ -405,18 +405,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#using-firebase" class="md-nav__link">
+  <a href="#get-project-info" class="md-nav__link">
     <span class="md-ellipsis">
-      Using Firebase
+      Get Project Info
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#using-google-cloud-console" class="md-nav__link">
+  <a href="#create-a-new-service-account" class="md-nav__link">
     <span class="md-ellipsis">
-      Using Google Cloud Console
+      Create a new Service Account
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-private-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create a Private Key
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#in-google-play-console" class="md-nav__link">
+    <span class="md-ellipsis">
+      In Google Play Console
     </span>
   </a>
   
@@ -660,18 +678,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#using-firebase" class="md-nav__link">
+  <a href="#get-project-info" class="md-nav__link">
     <span class="md-ellipsis">
-      Using Firebase
+      Get Project Info
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#using-google-cloud-console" class="md-nav__link">
+  <a href="#create-a-new-service-account" class="md-nav__link">
     <span class="md-ellipsis">
-      Using Google Cloud Console
+      Create a new Service Account
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-private-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create a Private Key
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#in-google-play-console" class="md-nav__link">
+    <span class="md-ellipsis">
+      In Google Play Console
     </span>
   </a>
   
@@ -704,20 +740,12 @@
 <h3 id="enabling-the-feature-in-google-play-console">Enabling the feature in Google Play Console</h3>
 <p>Also the feature has to be enabled in the Goole Play Console for your project.</p>
 <p><img alt="Enable in Google Play Console" src="../images/android/google_enable_play_integrity.png" /></p>
-<h3 id="using-firebase">Using Firebase</h3>
-<p>Firebase is a convenient way to ensure we have all the data to perform Play Integrity tests.</p>
-<p>To retrieve the neccessary info you have to go to your firebase console and open the project settings. <a href="https://console.firebase.google.com/">https://console.firebase.google.com/</a>
-The project number will be under the <code>General</code> tab
-<img alt="Firebase project settings" src="../images/android/firebase_project_settings.png" /></p>
-<p>We also need a service account private key to make requests to google on your behalf for retrieving additional information regarding suspicious activity on the device. You can generate the private key from firebase.</p>
-<p><img alt="Generage Private Key in Firebase" src="../images/android/firebase_generate_private_key.png" /></p>
-<p>Then you'll have to enable Play Integrity from the google console
-<a href="https://console.cloud.google.com/marketplace/product/google/playintegrity.googleapis.com">https://console.cloud.google.com/marketplace/product/google/playintegrity.googleapis.com</a> for your selected project.</p>
-<h3 id="using-google-cloud-console">Using Google Cloud Console</h3>
-<p>You can also get all the neccessary info from the Google Cloud Console. <a href="https://console.cloud.google.com">https://console.cloud.google.com</a></p>
+<h3 id="get-project-info">Get Project Info</h3>
+<p>Get all the neccessary info from the Google Cloud Console. <a href="https://console.cloud.google.com">https://console.cloud.google.com</a></p>
 <p>The project number will be right on the home page with the name of your project.
 <img alt="Google cloud console home" src="../images/android/google_cloud_console_home.png" /></p>
-<p>To generate the key there is some navigation to perform.</p>
+<p>You'll also need to provide the Application Id.</p>
+<h3 id="create-a-new-service-account">Create a new Service Account</h3>
 <ol>
 <li>
 <p>First go to the IAM &amp; Admin page by clicking this navigation button
@@ -728,12 +756,37 @@ The project number will be under the <code>General</code> tab
 <img alt="Service accounts" src="../images/android/google_cloud_iam_service_accounts.png" /></p>
 </li>
 <li>
+<p>Click on the <code>Create Service Account</code> button.
+<img alt="Create Service Account" src="../images/android/create_service_account.png" /></p>
+</li>
+<li>
+<p>Make sure to give all the neccessary permissions and provide a meaningful name.</p>
+</li>
+</ol>
+<h3 id="create-a-private-key">Create a Private Key</h3>
+<ol>
+<li>
 <p>Inside your service account, go to the Keys tab and create a new Key
 <img alt="Create key" src="../images/android/google_cloud_service_account_key.png" /></p>
 </li>
 <li>
 <p>Select JSON as the key type
 <img alt="Select JSON Key" src="../images/android/google_cloud_service_create_key.png" /></p>
+</li>
+</ol>
+<h3 id="in-google-play-console">In Google Play Console</h3>
+<ol>
+<li>
+<p>Open the Play Integrity in the navigation.
+<img alt="Play Integrity Nav" src="../images/android/play_integrity_nav.png" /></p>
+</li>
+<li>
+<p>Link Google Cloud Project.
+<img alt="Link Google Cloud Project" src="../images/android/link_play_integrity_project.png" /></p>
+</li>
+<li>
+<p>Enable Play Integrity Collection.
+<img alt="Enable Play Integrity Collection" src="../images/android/enable_play_integrity_collection.png" /></p>
 </li>
 </ol>
 
